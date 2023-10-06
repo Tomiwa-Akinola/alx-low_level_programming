@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* main - entry point */
+/* main - entry point of the program where the execution starts */
 
 /* Return: 0 when successful */
 int main(void)
@@ -12,15 +12,15 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
 	{
-		printf("n is positve\n");
+		printf("$n is positve\n");
 	}
 	else if (n == 0)
 	{
-		printf("n is zero\n");
+		printf("$n is zero\n");
 	}
 	else
 	{
-		printf("n is negative\n");
+		printf("$n is negative\n");
 	}
 	return (0);
 }
