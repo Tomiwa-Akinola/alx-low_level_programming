@@ -18,14 +18,14 @@ int main(void)
 			{
 				putchar(i + '0');
 				putchar(j + '0');
-				putchar(',');
-				putchar(' ');
-				if (i == 89)
+				if (i != 8 || j != 9)
 				{
-					putchar(89);
+					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
 	}
+	putchar('\n');
 	return (0);
 }
