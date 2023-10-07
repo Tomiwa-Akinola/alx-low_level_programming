@@ -20,6 +20,10 @@ int main(void)
 				putchar(j + '0');
 				putchar(',');
 				putchar(' ');
+				if (i == 89)
+				{
+					putchar(89);
+				}
 			}
 		}
 	}
