@@ -8,27 +8,31 @@
  */
 int main(void)
 {
-	int i;
+	int i = 0;
 	int j;
 	int k;
 
-	for (i = 0 ; i < j; i++)
+	while (i <= 9)
 	{
-		for (j = 1 ; j < k; j++)
+		j = 1;
+		while (j <= 9)
 		{
-			for (k = 2 ; k > j; k++)
+			k = 2;
+			while (k <= 9)
 			{
-				if (i != j && j != k)
+				while (i < j && j < k)
 				{
 					putchar(i + '0');
 					putchar(j + '0');
 					putchar(k + '0');
 					putchar(',');
 					putchar(' ');
-					putchar('\n');
 				}
+				k++;
 			}
+			j++;
 		}
+		i++;
 	}
 	return (0);
 }
