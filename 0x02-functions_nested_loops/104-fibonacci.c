@@ -13,7 +13,7 @@ int main(void)
 	int i;
 
 	printf("%lu, ", a);
-	for (i = 1 ; i <= 98 ; i++)
+	for (i = 1 ; i < 98 ; i++)
 	{
 		printf("%lu", b);
 		if (i != 'b')
