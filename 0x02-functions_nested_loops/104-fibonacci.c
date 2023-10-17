@@ -16,7 +16,7 @@ int main(void)
 	for (i = 1 ; i <= 98 ; i++)
 	{
 		printf("%lu", b);
-		if (i != 98)
+		if (i != 'b')
 			printf(", ");
 		next = a + b;
 		a = b;
