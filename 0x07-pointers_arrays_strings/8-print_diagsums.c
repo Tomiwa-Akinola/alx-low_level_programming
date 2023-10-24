@@ -5,7 +5,7 @@
  * print_diagsums - prints the sum of two diagonals of a sqyare
  * matrix of intergers
  * @a: parameter 1
- * @b: parameter 2
+ * @size: parameter 2
  */
 
 void print_diagsums(int *a, int size)
