@@ -3,22 +3,34 @@
 /**
  * _atoi - converts a string to an integer
  * @s: parameter
- * Return: 0 if there are no numbers
+ * Return: j
  */
 
 int _atoi(char *s)
 {
-	int i = 0;
-	int j = 1;
-	unsigned int k = 0;
+	int c = 0;
+	unsigned int j = 0;
+	int k = 1;
 	int l = 0;
 
 	while (s[c])
 	{
 		if (s[c] == 45)
 		{
-			j *= -1;
+			k *= -1;
 		}
+		while (s[c] >= 48 && s[c] <= 57)
+		{
+			l = 1;
+			j = (j * 10) + (s[c] - '0');
+			c++;
+		}
+		if (l == 1)
+		{
+			break;
+		}
+		c++;
 	}
-
+	j *= k;
+	return (j);
 }
