@@ -3,7 +3,7 @@
 /**
  * sqrt_a - returns natural square root
  * @a: parameter
- * @c: iterator
+ * @b: iterator
  * Return: square root or -1
  */
 
