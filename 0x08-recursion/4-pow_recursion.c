@@ -4,6 +4,7 @@
  * _pow_recursion - returns the value of x raised to power y
  * @x: parameter 1
  * @y: parameter 2
+ * Return: 0
  */
 
 int _pow_recursion(int x, int y)
