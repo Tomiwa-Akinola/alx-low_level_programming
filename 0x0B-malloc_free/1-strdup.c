@@ -1,5 +1,5 @@
 #include "main.h"
-#include <string.h>
+
 /**
  * _strdup - returns a pointer to a new sting which is a duplicate
  * @str: string
@@ -9,12 +9,15 @@
 char *_strdup(char *str)
 {
 	char *dup;
-	int i;
+	int i, num = 0;
 
 	if (str == NULL)
 		return (NULL);
 
-	dup = malloc(sizeof(char) * strlen(str));
+	for (i = 0 ; str[i] != '\0' ; i++)
+		num++;
+
+	dup = malloc(sizeof(char) * num + 1);
 
 	if (dup == NULL)
 		return (NULL);
