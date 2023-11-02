@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * allocates memory for an array using malloc
+ * _calloc - allocates memory for an array using malloc
  * @nmemb: content of array
  * @size: array size
  * Return: nothing
