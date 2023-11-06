@@ -1,14 +1,23 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
- * strtow - splits a string into words
- * @str: string to be splitted
- * Return: charcter
+ * word_len - locates the index marking the end of the first word
+ * @str: The string to be searched
+ * Return: The index marking the end of the initial word pointed to by str
  */
 
-char **strtow(char *str)
+int word_len(char *str)
 {
-	int i;
+	int index = 0, len = 0;
 
-	if ()
+	while (*(str + index) && *(str + index) != ' ')
+	{
+		len++;
+		index++;
+	}
+	return (len);
 }
+
+/**
+ *
