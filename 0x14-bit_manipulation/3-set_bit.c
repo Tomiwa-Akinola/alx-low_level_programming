@@ -4,7 +4,7 @@
  * set_bit - sets the value of a bit to 1 at a given index
  * @n: number to set to 1-bit
  * @index: index of the number to be set to 1-bit
- * Return:
+ * Return: 1 if successful or -1 if an error occur
  */
 
 int set_bit(unsigned long int *n, unsigned int index)
