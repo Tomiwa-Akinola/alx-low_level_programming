@@ -1,1 +1,1 @@
-This project cotains tasks on Dynamic libraries in C
+This projects contains tasks on static library
